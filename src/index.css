@@ -1,0 +1,267 @@
+
+*{
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+nav{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  background-color: #ffe9e9; 
+  color: #333333; 
+  border-bottom: 1px solid #e0e0e0; 
+ margin: 0px;
+ padding: 0px;
+ white-space: 0px;
+
+}
+.nav-social{
+  position: absolute;
+  left: 100px;
+  top: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+.nav-links .list  {
+ padding-bottom: 50px;
+position:relative;
+top: 19px;
+width: 150%;
+margin: 0px;
+font-style: row;
+display: flex;
+justify-content: space-between;
+  
+}
+@media screen and (max-width:648px) {
+  .nav-toggle{
+   display: block !important;
+  
+  }
+  .nav-logo{
+    width: 100%;
+    grid-template-columns: 1 fr 1 fr 1 fr ;
+  }
+
+  .nav-links{
+    position: absolute;
+    width: 200px;
+    right: 0;
+    left: 20;
+    top: 100;
+    height:800px ;
+    background-color: #fdf6f6;
+    border-bottom: 1px solid #f1e5e5;
+    box-shadow: 0 0 10px rgba(117, 117, 117, 0.3);
+  }
+  .nav-links .list{
+    display: block;
+  }
+  .nav-links li{
+padding: 15px 14px;
+  }
+  .nav-social{
+    display: none;
+
+  }
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+main .title{
+font-size: 25px;
+text-align: center;
+
+}
+.reviews{
+position: relative;
+  width: 400px;
+  margin-top:50px;
+  box-shadow: 0 0 10px rgba(117, 117, 117, 0.3);
+ 
+  height: 350px;
+  text-align: center;
+
+}
+.reviews img{
+  width: 80 px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding-top: 15px;
+
+}
+
+author{
+  color:#033;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  
+}
+.job{
+  color:rgb(24, 71, 71);
+  font-weight: 600;
+
+}
+
+
+
+.info{
+  color: rgb(87, 87,87)
+}
+button{
+  color:darkorchid;
+  border:none;
+  background: none;
+  outline:none;
+ 
+}
+
+.reviews-button {
+background: rgb(220,20,60,);
+ position: absolute ; 
+bottom: 15px;
+}
+.random-button{
+ 
+    background: rgb(255, 175, 191);
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .random-button:hover {
+    background-color: rgb(187, 145, 153);
+  }
+  
+  .random-button:active {
+    background-color: rgb(241, 239, 239);
+  }
+  h2{
+    position: absolute;
+    top: 80px;
+  }
+  .reviews-button button{
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+   #light{
+    
+}
+#dark{
+  background-color: #333; /* Dark gray background */
+  color: #fff; /* White text */background-color: #333; /* Dark gray background */
+  color: #fff; /* White text */
+}
+  #light .main{
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+}
+#dark .main{
+    background-color: #380043;
+}
+#gh{
+  padding-top: 10px;
+}
+.cc{
+  margin-top: 50px;
+  font-size: 0.75rem; /* Larger font size */
+      padding: 1.25rem 2.5rem; /* Larger padding */
+}
+.bnbn{
+  position: relative;
+  margin-left: 20;
+}
+#we{
+  position: absolute;
+}
+#me{
+  margin-bottom: 20px;
+}
+.modal-body label{
+  margin-right: 10px;
+}
+
+
+
+.btn-custom {
+  background-color: #7e4b3c; /* Custom background color */
+  color: #a87e7e;           /* Custom text color */
+  border: none;             /* Optional: removes default border */
+}
+
+
+
+.form-group {
+  display: flex;
+  align-items: flex-end;
+
+  margin-bottom: 1rem; /* Adjust spacing between form groups */
+}
+.form-group label {
+  flex: 1 0 1; /* Adjust label width as needed */
+  margin-right: 1rem; /* Space between label and input */
+  text-align: right; /* Align label text to the right */
+ flex-shrink: 2;
+ align-items: flex-end;
+ padding: 3px;
+}
+.form-group .form-control {
+  flex: 1; /* Input takes the remaining space */
+}
+.style{
+  height: 100px;
+}
+#btnn{
+  width: 15%;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+            
+}
+.fontt{
+  font-size: small;
+}
+.navbar-cl{
+  background-color: #007bff; /* Blue */
+  color: #ffffff; /* White */
+
+}
